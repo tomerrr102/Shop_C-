@@ -1,0 +1,32 @@
+﻿<Window x:Class="PL.BO_ProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL"
+        mc:Ignorable="d"
+        Title="BO_ProductWindow" Height="640" Width="800">
+    <Grid Name ="MainGrid" RenderTransformOrigin="0.496,0.503">
+        <Grid.Background>
+            <ImageBrush ImageSource="/whiesport.jpg"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+
+
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="200*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="lbCarName" Content="Name" HorizontalAlignment="Left" Margin="258,72,0,0" VerticalAlignment="Top" Height="31" Width="56" Background="Black" Foreground="White"/>
+        <Label x:Name="lbCarPrice" Content="Car price" HorizontalAlignment="Left" Margin="258,147,0,0" VerticalAlignment="Top" Height="28" Foreground="White" Background="Black"/>
+        <Label x:Name="lbCarAmount" Content="Car amount" HorizontalAlignment="Left" Margin="258,228,0,0" VerticalAlignment="Top" Background="Black" Foreground="White"/>
+        <Label x:Name="lbCarCategory" Content="Car category" HorizontalAlignment="Left" Margin="258,189,0,0" VerticalAlignment="Top" Background="Black" Foreground="White"/>
+        <TextBox x:Name="txtBoxCarName" HorizontalAlignment="Left" Margin="346,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" />
+        <ComboBox x:Name="cbCarTypes" HorizontalAlignment="Left" Margin="346,192,0,0" VerticalAlignment="Top" Width="160" Height="23" />
+        <TextBox x:Name="txtBoxCarID" HorizontalAlignment="Left" Margin="346,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" TextChanged="txtBoxCarID_TextChanged"/>
+        <TextBox x:Name="txtBoxCarPrice" HorizontalAlignment="Left" Margin="346,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" TextChanged="txtBoxCarPrice_TextChanged" Grid.RowSpan="2"/>
+        <TextBox x:Name="txtBoxCarAmount" HorizontalAlignment="Left" Margin="346,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" TextChanged="txtBoxCarAmount_TextChanged" Height="18"/>
+        <Button x:Name="btAddCar" Content="ADD" HorizontalAlignment="Left" Margin="228,312,0,0" VerticalAlignment="Top" Width="58" Height="32" Click="btAddCar_Click" Grid.RowSpan="2"/>
+        <Button x:Name="btUpdateProduct" Content="Update" HorizontalAlignment="Left" Margin="119,312,0,0" VerticalAlignment="Top" Height="32" Width="58" Click="btUpdateProduct_Click" Grid.RowSpan="2"/>
+        <Label Content="Car ID" HorizontalAlignment="Left" Margin="258,110,0,0" VerticalAlignment="Top" Background="Black" Foreground="White"/>
+    </Grid>
+</Window>

@@ -1,0 +1,51 @@
+﻿<Window x:Class="PL.BO_ProductListWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL"
+        mc:Ignorable="d"
+        Title="BO_ProductListWindow" Height="640" Width="800">
+    <Grid Name ="MainGrid" >
+        <Grid.Background>
+            <ImageBrush ImageSource="/graycarview.jpeg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="297*"/>
+            <ColumnDefinition Width="217*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="200*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="LabelCategory" Content="Category :" HorizontalAlignment="Left" Margin="63,30,0,0" VerticalAlignment="Top" Height="38" Width="96" FontSize="18"/>
+        <ComboBox x:Name="cbProductSelector" HorizontalAlignment="Left" VerticalAlignment="Top" Width="151" SelectionChanged="cbProductSelector_SelectionChanged" Margin="171,36,0,0" Height="26" FontSize="14"/>
+        <ListView x:Name="CarListView" Grid.Row="1" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="CarListView_SelectionChanged" MouseDoubleClick="CarListView_MouseDoubleClick" Margin="0,0,140,146">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding CarID}" Header="ID" />
+                    <GridViewColumn DisplayMemberBinding="{Binding CarName}" Header="Name" />
+                    <GridViewColumn DisplayMemberBinding="{Binding CarType}" Header="Category"  />
+                    <GridViewColumn DisplayMemberBinding="{Binding CarPrice}" Header="Price" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btAddCar" Content="Add new product" HorizontalAlignment="Left" Margin="108,368,0,0" VerticalAlignment="Top" Height="36" Width="107" Click="btAddCar_Click" Grid.Row="1"/>
+        <ListView x:Name="OrderForListView" Grid.Row="1" d:ItemsSource="{d:SampleData ItemCount=5}" MouseDoubleClick="OrderForList_DoubleClick" Grid.ColumnSpan="2" Margin="462,0,0,146">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding ID}" Header="ID" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Name}" Header="Name" />
+                    <GridViewColumn DisplayMemberBinding="{Binding TotalPrice}" Header="TotalPrice"  />
+                    <GridViewColumn DisplayMemberBinding="{Binding AmountOfItems}" Header="AmountOfItems" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Status}" Header="Status" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Grid.Column="1" Content="Orders" HorizontalAlignment="Center" Margin="0,89,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Products" HorizontalAlignment="Left" Margin="119,86,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Button x:Name="btBackManu" Content="&lt;-- Back" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Click="btBackManu_Click" Width="67"/>
+
+    </Grid>
+</Window>

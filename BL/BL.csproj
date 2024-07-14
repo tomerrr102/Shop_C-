@@ -1,0 +1,82 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+<PropertyGroup>
+<TargetFramework>net6.0</TargetFramework>
+<ImplicitUsings>enable</ImplicitUsings>
+<Nullable>enable</Nullable>
+<BaseOutputPath>$(SolutionDir)\bin\</BaseOutputPath>
+<OutputPath>$(SolutionDir)\bin\</OutputPath>
+<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+<UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+
+<RootNamespace />
+</PropertyGroup>	<ItemGroup>
+	  <Folder Include="BlApi\" />
+	</ItemGroup>
+
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<BaseOutputPath>$(SolutionDir)\bin\</BaseOutputPath>
+		<OutputPath>$(SolutionDir)\bin\</OutputPath>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+		<RootNamespace />
+	</PropertyGroup>
+</Project>
+
+
+<TargetFramework>net6.0</TargetFramework>
+<ImplicitUsings>enable</ImplicitUsings>
+<Nullable>enable</Nullable>
+<BaseOutputPath>$(SolutionDir)\bin\</BaseOutputPath>
+<OutputPath>$(SolutionDir)\bin\</OutputPath>
+<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+<UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+<RootNamespace />
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<BaseOutputPath>$(SolutionDir)\bin\</BaseOutputPath>
+		<OutputPath>$(SolutionDir)\bin\</OutputPath>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+		<RootNamespace />
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="BlApi\**" />
+	  <Compile Remove="BlImplementation\**" />
+	  <Compile Remove="BO\**" />
+	  <EmbeddedResource Remove="BlApi\**" />
+	  <EmbeddedResource Remove="BlImplementation\**" />
+	  <EmbeddedResource Remove="BO\**" />
+	  <None Remove="BlApi\**" />
+	  <None Remove="BlImplementation\**" />
+	  <None Remove="BO\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\DalFaced\DalFaced.csproj" />
+	  <ProjectReference Include="..\DalList\DalList.csproj" />
+	</ItemGroup>
+
+</Project>
+		<BaseOutputPath>$(SolutionDir)\bin\</BaseOutputPath>
+<OutputPath>$(SolutionDir)\bin\</OutputPath>
+<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+<UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+<RootNamespace />		<OutputPath>$(SolutionDir)\bin\</OutputPath>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+		

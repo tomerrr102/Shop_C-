@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<BaseOutputPath>$(SolutionDir)\bin\</BaseOutputPath>
+		<OutputPath>$(SolutionDir)\bin\</OutputPath>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<UseCommonOutputDirectory>true</UseCommonOutputDirectory>
+	    <BaseOutputPath>$(SolutionDir)\bin\</BaseOutputPath>
+</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="bugetty.jpg" />
+	  <None Remove="carproductsview.jpeg" />
+	  <None Remove="graycarview.jpeg" />
+	  <None Remove="image_background\carproductsview.jpeg" />
+	  <None Remove="image_background\carview.jpeg" />
+	  <None Remove="image_background\graycarview.jpeg" />
+	  <None Remove="image_background\sport.jpg" />
+	  <None Remove="lamborghini_huracan_slideshow_lead.jpeg" />
+	  <None Remove="speedyy.jpg" />
+	  <None Remove="sport.jpg" />
+	  <None Remove="whiesport.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\B_L\B_L.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="bugetty.jpg" />
+	  <Resource Include="carproductsview.jpeg" />
+	  <Resource Include="graycarview.jpeg" />
+	  <Resource Include="image_background\bugetty.jpg" />
+	  <Resource Include="image_background\carproductsview.jpeg" />
+	  <Resource Include="image_background\graycarview.jpeg" />
+	  <Resource Include="image_background\sport.jpg" />
+	  <Resource Include="image_background\whiesport.jpg" />
+	  <Resource Include="lamborghini_huracan_slideshow_lead.jpeg" />
+	  <Resource Include="speedyy.jpg" />
+	  <Resource Include="whiesport.jpg" />
+	</ItemGroup>
+	
+
+</Project>
